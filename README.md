@@ -29,15 +29,15 @@ flowchart LR
 
 Distillation Attacks are strictly categorized based on the level of information the adversary can extract from the target model's output terminal boundaries.
 
-### A. Soft-Label Distillation Attacks (Logit Extraction)
-*   **Mechanism:** The adversary queries the target API and requests the full, un-truncated vector of output probabilities (logits) for all candidate classes. The attacker minimizes the Kullback-Leibler (KL) divergence between the teacher's soft targets and the student's output layer [INDEX: 11].
-*   **Threat Profile:** Highly dangerous; soft logits contain "dark knowledge"—the target model's internal uncertainty boundaries and structural similarities across classes—allowing the clone model to converge with exceptionally high fidelity.
+-    ### A. Soft-Label Distillation Attacks (Logit Extraction)
+        *   **Mechanism:** The adversary queries the target API and requests the full, un-truncated vector of output probabilities (logits) for all candidate classes. The attacker minimizes the Kullback-Leibler (KL) divergence between the teacher's soft targets and the student's output layer [INDEX: 11].
+        *   **Threat Profile:** Highly dangerous; soft logits contain "dark knowledge"—the target model's internal uncertainty boundaries and structural similarities across classes—allowing the clone model to converge with exceptionally high fidelity.
 
-### B. Hard-Label Distillation Attacks (Decision-Boundary Extraction)
-*   **Mechanism:** Deployed when a production API is hardened to return only the absolute final top-1 class name or token string, completely obscuring numerical logit parameters. The attacker applies iterative boundary-search algorithms (like HopSkipJump) or gradient-free optimization to probe the strict geometric switch points where one classification transforms into another.
+-    ### B. Hard-Label Distillation Attacks (Decision-Boundary Extraction)
+        *   **Mechanism:** Deployed when a production API is hardened to return only the absolute final top-1 class name or token string, completely obscuring numerical logit parameters. The attacker applies iterative boundary-search algorithms (like HopSkipJump) or gradient-free optimization to probe the strict geometric switch points where one classification transforms into another.
 
-### C. Data-Free Adversarial Distillation Attacks (Zero-Shot Extraction)
-*   **Mechanism:** The attacker lacks access to any natural input data pool to query the API. To resolve this, they loop a Generative Adversarial Network (GAN) framework around the target API: a generative network synthesizes synthetic data vectors specifically engineered to maximize the teacher's output entropy, feeding those synthetic samples to the student clone dynamically.
+-    ### C. Data-Free Adversarial Distillation Attacks (Zero-Shot Extraction)
+        *   **Mechanism:** The attacker lacks access to any natural input data pool to query the API. To resolve this, they loop a Generative Adversarial Network (GAN) framework around the target API: a generative network synthesizes synthetic data vectors specifically engineered to maximize the teacher's output entropy, feeding those synthetic samples to the student clone dynamically.
 
 ---
 
