@@ -3,7 +3,15 @@
 </div>
 
 # 🛡️ Awesome-Distillation-Attacks
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+</p>
+
 ## 🧠 Distillation Attacks in AI: Evolution, Variants, Types, & Applications
+
+> **SEO Description:** A curated repository of Awesome Distillation Attacks, Model Extraction threats, Adversarial Machine Learning vulnerability research, and defenses in artificial intelligence. Discover how knowledge distillation can be maliciously exploited.
+
 
 A Distillation Attack—historically intertwined with model extraction, black-box adversarial prompting, and membership inference—is an adversarial security framework designed to reverse-engineer, duplicate, or compromise the proprietary parameters of a protected target model (the Teacher). In knowledge distillation, a legitimate student model is trained on a teacher's soft output probabilities to optimize execution footprints [INDEX: 11]. A *Distillation Attack* exploits this exact mechanism maliciously. An adversary systematically prompts a black-box enterprise API, collects the output logits, and uses this retrieved data as a continuous labeling engine to train a replica clone (the Student). This architecture bypasses multi-million dollar model pre-training costs, violates corporate intellectual property (IP), and exposes the cloned network to downstream zero-shot offline adversarial exploits.
 
