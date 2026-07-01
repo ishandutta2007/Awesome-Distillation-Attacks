@@ -101,6 +101,17 @@ To advance this documentation repository, threat-modeling architecture, or secur
 * Generate a **comprehensive Markdown table** explicitly analyzing Soft-Label Stealing, Hard-Label Boundary Probing, Data-Free GAN Extraction, and Synthetic LLM Distillation across query complexity boundaries, VRAM/Token overhead costs, structural data dependency, and defense mitigation viability.
 * Establish an **automated security monitoring pipeline using Triton** to profile how sharding API traffic across multi-node anomaly detection filters alters the processing latency of live concurrent user generation pre-fills.
 
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Distillation-Attacks&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Distillation-Attacks&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Distillation-Attacks&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Distillation-Attacks&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
 ***
 
 **Proactive Repository Follow-Ups:**
