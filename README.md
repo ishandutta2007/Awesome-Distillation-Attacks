@@ -10,7 +10,8 @@ A Distillation Attack—historically intertwined with model extraction, black-bo
 The technical methodology of cross-model parameter extraction has transitioned from basic tabular boundary queries to active dataset synthesis and native token-level latent tracking vectors.
 
 ```mermaid
-[Tabular Boundary Extractions (2016)] ───> [Active Query Selection (Knockoff Nets)] ───> [Generative & LLM Extraction Era (2024+)](Rigid Shadow Model Hyperplanes)           (Heuristic Non-Parametric Optimization)        (Interleaved Synthetic Prompt Distillation)
+flowchart LR
+    A["Tabular Boundary Extractions (2016)\n(Rigid Shadow Model Hyperplanes)"] ───> B["Active Query Selection (Knockoff Nets)\n(Heuristic Non-Parametric Optimization)"] ───> C["Generative & LLM Extraction Era (2024+)\n(Interleaved Synthetic Prompt Distillation)"]
 ```
 
 *   **The Flat Equational Bound Era (Tramèr et al., 2016)**
@@ -45,7 +46,10 @@ Distillation Attacks are strictly categorized based on the level of information 
 Successfully executing a distillation attack provides the adversary with a localized, offline white-box replica of the hidden model, unlocking specialized cross-model security breaches.
 
 ```mermaid
-[Target Protected Cloud API] ──(Distillation Attack)──> [Localized Student Clone]│(Calculate White-Box Gradients Offline)│▼[Catastrophic API Disruption] <──(Transfer Adversarial Prompt)──┘
+flowchart TD
+    API["Target Protected Cloud API"] ──>|Distillation Attack| Clone["Localized Student Clone"]
+    Clone ──>|Calculate White-Box Gradients Offline| Exploit["Transfer Adversarial Prompt"]
+    Exploit ──>|Catastrophic Disruption| API
 ```
 
 *   **Adversarial Transferability Escalation**
