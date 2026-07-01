@@ -11,7 +11,7 @@ The technical methodology of cross-model parameter extraction has transitioned f
 
 ```mermaid
 flowchart LR
-    A["Tabular Boundary Extractions (2016)\n(Rigid Shadow Model Hyperplanes)"] ───> B["Active Query Selection (Knockoff Nets)\n(Heuristic Non-Parametric Optimization)"] ───> C["Generative & LLM Extraction Era (2024+)\n(Interleaved Synthetic Prompt Distillation)"]
+    A["Tabular Boundary Extractions (2016)\n(Rigid Shadow Model Hyperplanes)"] ---> B["Active Query Selection (Knockoff Nets)\n(Heuristic Non-Parametric Optimization)"] ---> C["Generative & LLM Extraction Era (2024+)\n(Interleaved Synthetic Prompt Distillation)"]
 ```
 
 *   **The Flat Equational Bound Era (Tramèr et al., 2016)**
@@ -47,9 +47,9 @@ Successfully executing a distillation attack provides the adversary with a local
 
 ```mermaid
 flowchart TD
-    API["Target Protected Cloud API"] ──>|Distillation Attack| Clone["Localized Student Clone"]
-    Clone ──>|Calculate White-Box Gradients Offline| Exploit["Transfer Adversarial Prompt"]
-    Exploit ──>|Catastrophic Disruption| API
+    API["Target Protected Cloud API"] --->|Distillation Attack| Clone["Localized Student Clone"]
+    Clone --->|Calculate White-Box Gradients Offline| Exploit["Transfer Adversarial Prompt"]
+    Exploit --->|Catastrophic Disruption| API
 ```
 
 *   **Adversarial Transferability Escalation**
