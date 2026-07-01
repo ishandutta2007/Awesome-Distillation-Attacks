@@ -1,11 +1,15 @@
-# Awesome-Distillation-Attacks
-## Distillation Attacks in AI: Evolution, Variants, Types, & Applications
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome Distillation Attacks Banner" width="100%"/>
+</div>
+
+# 🛡️ Awesome-Distillation-Attacks
+## 🧠 Distillation Attacks in AI: Evolution, Variants, Types, & Applications
 
 A Distillation Attack—historically intertwined with model extraction, black-box adversarial prompting, and membership inference—is an adversarial security framework designed to reverse-engineer, duplicate, or compromise the proprietary parameters of a protected target model (the Teacher). In knowledge distillation, a legitimate student model is trained on a teacher's soft output probabilities to optimize execution footprints [INDEX: 11]. A *Distillation Attack* exploits this exact mechanism maliciously. An adversary systematically prompts a black-box enterprise API, collects the output logits, and uses this retrieved data as a continuous labeling engine to train a replica clone (the Student). This architecture bypasses multi-million dollar model pre-training costs, violates corporate intellectual property (IP), and exposes the cloned network to downstream zero-shot offline adversarial exploits.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The technical methodology of cross-model parameter extraction has transitioned from basic tabular boundary queries to active dataset synthesis and native token-level latent tracking vectors.
 
@@ -22,7 +26,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Data-Extraction Variants
+## 🧬 2. Core Functional & Data-Extraction Variants
 
 Distillation Attacks are strictly categorized based on the level of information the adversary can extract from the target model's output terminal boundaries.
 
@@ -34,7 +38,7 @@ Distillation Attacks are strictly categorized based on the level of information 
 
 ---
 
-## 3. Downstream Adversarial Vulnerability Types
+## 🎯 3. Downstream Adversarial Vulnerability Types
 
 Successfully executing a distillation attack provides the adversary with a localized, offline white-box replica of the hidden model, unlocking specialized cross-model security breaches.
 
@@ -52,7 +56,7 @@ flowchart TD
 
 ---
 
-## 4. Corporate Countermeasures & Defense Infrastructure
+## 🛡️ 4. Corporate Countermeasures & Defense Infrastructure
 
 Protecting proprietary model weights and training alignment data against distillation loops requires balancing API response resolution with automated traffic analysis.
 
@@ -64,7 +68,7 @@ Protecting proprietary model weights and training alignment data against distill
 
 ---
 
-## 5. Frontier Real-World AI Security Case Studies
+## 🏢 5. Frontier Real-World AI Security Case Studies
 
 | Case Study | Attack Scenario | Year | First Used Paper Link |
 | :--- | :--- | :--- | :--- |
@@ -74,7 +78,7 @@ Protecting proprietary model weights and training alignment data against distill
 
 ---
 
-## References
+## 📚 References
 1. Hinton, G., Vinyals, O., & Dean, J. (2015). Distilling the knowledge in a neural network. *arXiv preprint arXiv:1503.02531* [INDEX: 11].
 2. Tramèr, F., et al. (2016). Stealing machine learning models via prediction APIs. *Proceedings of the 25th USENIX Security Symposium*, 601-618.
 3. Papernot, N., et al. (2017). Practical black-box attacks against machine learning. *Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security*, 506-519.
